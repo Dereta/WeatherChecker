@@ -40,7 +40,7 @@ except:
 	
 # Get Data from OpenWeatherMap via API and STORE it in a CSV
 for location in LOCATIONS:
-	print(API_STRING.format(location[0], API_KEY))
+	#print(API_STRING.format(location[0], API_KEY))
 	api_request = requests.get(API_STRING.format(location[0], API_KEY))
 	if api_request.status_code == 200:
 		# Creaete/Edit Datafile for Location
